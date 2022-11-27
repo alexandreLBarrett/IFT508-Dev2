@@ -1,0 +1,15 @@
+html
+    head
+        title
+        script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+        script(src='/comments.js')
+    body
+        ul
+            span Comments
+            div
+                input#comment
+                button#commentButton Send
+            each val in comments
+                li
+                    div !{val.username}
+                    div !{val.comment}
